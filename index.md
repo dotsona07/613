@@ -1,6 +1,6 @@
 ---
-layout: default
 title: 613 Originals Test
+layout: default
 ---
 
 [Product detail](/product-example.html)
