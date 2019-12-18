@@ -1,38 +1,68 @@
+<footer class="py-3 px-5 bg-dark">
+  <div class="text-center">
+    <img class="my-4" style="max-width: 176px;" src="https://res.cloudinary.com/andrewdotson88/image/upload/v1534708681/613/global/613-logo-2.svg" alt="">
+  </div>
 
-<div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-xl-4">
+        <div class="text-white">
+          <h3>Get in contact with us</h3>
+          <ul>
+            <li>Monday-Friday: 9Am - 5PM</li>
+            <li>Saturday: Closed</li>
+            <li>Sunday: Closed</li>
+          </ul>
+          <h4>Call Us: 866-613-6744</h4>
+        </div>
+      </div>
 
-  <p class="h5 mb-3">{{ site.title | escape }}</p>
+      <div class="col-xs-12 col-xl-4">
+        <div class="text-white">
+          <h3>Learn more about our company</h3>
+          <nav class="nav flex-column">
+            <a class="nav-link active" href="#">Frequently Asked Questions</a>
+            <a class="nav-link" href="#">How Do I Prepare My Art?</a>
+            <a class="nav-link" href="#">Warranty & Polocies</a>
+            <a class="nav-link" href="#">Help Center</a>
+            <a class="nav-link" href="#">Free Samples</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-xl-4">
+        <div class="text-white">
+          <h3>Sign up for our newsletter</h3>
+          <a class="btn btn-success btn-lg" href="#">Stay Updated</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <div class="row">
-
-    <div class="col-sm">
-      <ul class="list-unstyled">
-        <li>
-          {%- if site.author -%}
-            {{ site.author | escape }}
-          {%- else -%}
-            {{ site.title | escape }}
-          {%- endif -%}
+    <div class="col-xs-12 col-xl-6">
+      <ul class="list-inline list-unstyled">
+        <li class="list-inline-item">
+          <a href=""><img src="https://res.cloudinary.com/andrewdotson88/image/upload/v1525651063/613/icons/icon-linkedin.svg" alt=""></a>
         </li>
-        {%- if site.email -%}
-          <li>
-            <a href="mailto:{{ site.email }}">
-              {{ site.email }}
-            </a>
-          </li>
-        {%- endif -%}
+        <li class="list-inline-item">
+          <a href=""><img src="https://res.cloudinary.com/andrewdotson88/image/upload/v1525651062/613/icons/icon-facebook.svg" alt=""></a>
+        </li>
+        <li class="list-inline-item">
+          <a href=""><img src="https://res.cloudinary.com/andrewdotson88/image/upload/v1525651062/613/icons/icon-twitter.svg" alt=""></a>
+        </li>
+        <li class="list-inline-item">
+          <a href=""><img src="https://res.cloudinary.com/andrewdotson88/image/upload/v1525651062/613/icons/icon-youtube.svg" alt=""></a>
+        </li>
       </ul>
     </div>
 
-
-    <div class="col-sm text-right">
-      <p>{{- site.description | escape -}}</p>
-
-      <p>
-        <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-      </p>
+    <div class="col-xs-12 col-xl-6 text-right">
+      <p class="small text-white">Copyright © 2019 Six Thirteen Originals</p>
     </div>
-
   </div>
 
-</div>
+</footer>

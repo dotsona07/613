@@ -9,3 +9,12 @@
 
 $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
 @import url($web-font-path);
+
+
+.navbar {
+    min-height: 90px;
+}
+
+body {
+    font-family: "franklin-gothic-urw-cond" ,sans-serif;
+}

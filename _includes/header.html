@@ -1,26 +1,42 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<nav class="navbar py-0 navbar-expand-sm navbar-light bg-primary">
+  
+  <!-- Logo -->
+  <a class="navbar-brand" href="{{ "/" | relative_url }}">
+    <img style="max-width: 167px" src="https://res.cloudinary.com/andrewdotson88/image/upload/v1534708681/613/global/613-logo-2.svg" alt="">
+  </a>
 
-    {%- assign page_paths = site.header_pages -%}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
-          {%- endif -%}
-        {% endfor -%}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <!-- Navigation -->
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item active">
+      <a class="nav-link text-white  py-4" href="#">Heat Transfers <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white  py-4" href="#">Names & Numbers</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link text-white  py-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Heat Presses
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white  py-4" href="#" tabindex="-1">Help Center</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white  py-4" href="#" tabindex="-1">About</a>
+    </li>
+  </ul>
+
+  <!-- Account -->
+  <form class="form-inline ml-auto">
+    <button class="btn btn-sm text-white" type="button">Account</button>
+    <button class="btn btn-sm text-white" type="button">Live Chat</button>
+    <button class="btn btn-sm text-white" type="button">Cart</button>
+    <button class="btn btn-sm text-white" type="button">Start Order</button>
+  </form>
 </nav>
